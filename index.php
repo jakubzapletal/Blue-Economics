@@ -102,7 +102,7 @@ $app->get('/job_description', function () use ($app) {
 	return $app->json($res);
 });
 
-$app->get('/workexperience/:id', function($id) use($app) {
+$app->get('/workexperience/{id}', function($id) use($app) {
     $res = $app['db']->execute('SELECT DISTINCT Id, Name FROM workexperiences WHERE id = :id', array(':id' => $id));
     $result = [];
     foreach ($res as $entry) {
@@ -120,7 +120,7 @@ $app->get('/workexperience', function() use($app) {
 	return $app->json($result);
 });
 
-$app->get('/search/:searchQuery', function($searchQuery) use($app) {
+$app->get('/search/{searchQuery}', function($searchQuery) use($app) {
     $result = array('industries' => [], 'jobs' => []);
 
     // find matching industries
