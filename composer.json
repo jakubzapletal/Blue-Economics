@@ -1,6 +1,6 @@
 {
     "require": {
-        "slim/slim": "2.*",
+				"silex/silex": "1.2.*@dev",
         "apache/log4php": "2.3.0"
     }
 }
