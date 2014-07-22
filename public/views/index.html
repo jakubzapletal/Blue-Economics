@@ -94,7 +94,7 @@
 				visibility: hidden !important;
 			}
 			#bigvideobackground {
-				background: url(/media/images/Video_02-1080-Filter2.jpg) no-repeat center center fixed; 
+				background: url(/public/img/Video_02-1080-Filter2.jpg) no-repeat center center fixed;
 				-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -179,7 +179,7 @@
 			padding: 0;
 			margin: 0;
 			outline: 0;
-			background: url(media/images/aboutpagebackground.jpg) no-repeat center center fixed; 
+			background: url(/public/img/aboutpagebackground.jpg) no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -209,8 +209,8 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://scrolldjs.com/demo/js/scrolld.min.js"></script>
-	<script type="text/javascript" src="/js/external/bower_components/video.js/video.js"></script>
-	<script type="text/javascript" src="/js/external/bower_components/BigVideo.js/lib/bigvideo.js"></script>
+	<script type="text/javascript" src="/public/js/external/bower_components/video.js/video.js"></script>
+	<script type="text/javascript" src="/public/js/external/bower_components/BigVideo.js/lib/bigvideo.js"></script>
 	<script type="text/javascript">
 		videoElement.addEventListener('canplay', function() { this.play(); } );
 	</script>
@@ -219,16 +219,16 @@
 <body>
 	<div id="bigvideobackground">
 		<video width="auto" height="120%" loop autoplay="autoplay" muted poster="/media/images/Video_02-1080-Filter2.jpg" preload="none">
-			<source src="/media/movies/Video_02-1080-Filter2.webm" type="video/webm">
-			<source src="/media/movies/Video_02-1080-Filter2.ogv" type="video/ogg">
-			<source src="/media/movies/Video_02-1080-Filter2.m4v" type="video/mp4">
+			<source src="/public/media/movies/Video_02-1080-Filter2.webm" type="video/webm">
+			<source src="/public/media/movies/Video_02-1080-Filter2.ogv" type="video/ogg">
+			<source src="/public/media/movies/Video_02-1080-Filter2.m4v" type="video/mp4">
 				Your browser does not support the video tag.
 		</video>
 		<!--<script>
 			$(function() {
 				var BV = new $.BigVideo({useFlashForFirefox:false});
 				BV.init();
-				BV.show('/media/movies/Video_02-1080-Filter2.webm', {altSource:'/media/movies/Video_02-1080-Filter2.ogv'}, {ambient:true});
+				BV.show('/public/media/movies/Video_02-1080-Filter2.webm', {altSource:'/public/media/movies/Video_02-1080-Filter2.ogv'}, {ambient:true});
 			});
 		</script>-->
 	</div>
@@ -239,9 +239,9 @@
  		<a id="about_sectionBtn" class="about_sectionBtn" href="#about_section"><span>about us</span></a>
     		<div id="menubar">
     			<ul>
-    				<li><img src="/media/images/biglogo.png"></li>
-    				<li><a href="/views/business-selection.html">I want to get small business advice</a></li>
-    				<li><a href="/views/jobs-selection.html">I want to learn some job skills</a></li>
+    				<li><img src="/public/img/biglogo.png"></li>
+    				<li><a href="/public/views/business-selection.html">I want to get small business advice</a></li>
+    				<li><a href="/public/views/jobs-selection.html">I want to learn some job skills</a></li>
 			</ul>
 		</div>
 	</div>

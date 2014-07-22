@@ -12,7 +12,7 @@ $app->configureMode('production', function () use ($app) {
     $app->config(array(
         'log.enable' => false,
         'debug' => false,
-        'config.path' => 'config/prod/'
+        'config.path' => 'app/config/prod/'
     ));
 });
 
@@ -21,7 +21,7 @@ $app->configureMode('development', function () use ($app) {
     $app->config(array(
         'log.enable' => false,
         'debug' => true,
-        'config.path' => 'config/dev/'
+        'config.path' => 'app/config/dev/'
     ));
 });
 
@@ -47,7 +47,7 @@ $app->container->singleton('log', function() {
 // TODO: move index.html into the /views directory and
 // point the templates to /views
 $view = $app->view();
-$view->setTemplatesDirectory('./');
+$view->setTemplatesDirectory(__DIR__ . '/public/views/');
 
 function executeSql($query, array $params = array()) {
     $app = \Slim\Slim::getInstance();

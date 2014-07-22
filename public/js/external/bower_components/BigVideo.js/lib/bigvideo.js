@@ -14,7 +14,7 @@
 		define([
 			'jquery',
 			'videojs',
-			'imagesloaded',
+			'../../imagesloaded/imagesloaded',
 			'jquery-ui'
 		], factory);
 	} else {
