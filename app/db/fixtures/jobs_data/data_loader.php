@@ -1,5 +1,8 @@
 <?php
-require '../vendor/autoload.php';
+
+define('ROOT_PATH', dirname(dirname(dirname(dirname(__DIR__)))));
+
+require ROOT_PATH . '/vendor/autoload.php';
 
 //var $app = null;
 
@@ -16,7 +19,7 @@ function initialize() {
         $app->config(array(
             'log.enable' => false,
             'debug' => false,
-            'config.path' => '../config/prod/'
+            'config.path' => ROOT_PATH . '/app/config/prod/'
         ));
     });
 
@@ -25,7 +28,7 @@ function initialize() {
         $app->config(array(
             'log.enable' => false,
             'debug' => true,
-            'config.path' => '../config/dev/'
+            'config.path' => ROOT_PATH . '/app/config/dev/'
         ));
     });
 
