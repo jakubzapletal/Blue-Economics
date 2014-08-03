@@ -1,5 +1,8 @@
 <?php
-require '../vendor/autoload.php';
+
+define('ROOT_PATH', dirname(dirname(dirname(dirname(__DIR__)))));
+
+require ROOT_PATH . '/vendor/autoload.php';
 
 //var $app = null;
 
